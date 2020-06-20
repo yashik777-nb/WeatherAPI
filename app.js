@@ -5,6 +5,6 @@ const ui = new UI();
 document.addEventListener("DOMContentLoaded", () => {
   weather
     .getWeather()
-    .then((data) => console.log(data))
+    .then((data) => ui.showData(data))
     .catch((err) => console.log(err));
 });
