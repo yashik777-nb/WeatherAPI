@@ -12,7 +12,6 @@ class UI {
   }
 
   showData(data) {
-    console.log(data);
     this.location.textContent = `${data.name}, ${data.sys.country}`;
     this.w_desc.textContent = data.weather[0].main;
     this.w_string.textContent = data.weather[0].description;
